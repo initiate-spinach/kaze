@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<article class="post"> {{ content }} </article>
+<div id="pgroup">
+	<br>
+	<br>
+	<div>
+		<a {% if page.next %} href="{{site.url}}{{page.next.url}}" class="pagenav" {% endif %}
+		{% unless page.next %} class="pvInvalid" {% endunless %}>Previous</a>
+		&nbsp;&nbsp;&nbsp;
+		<a {% if page.previous %} href="{{site.url}}{{page.previous.url}}" class="pagenav" {% endif %}
+		{% unless page.previous %} class="pvInvalid" {%endunless%}>Next</a>
+	</div>
+	<hr>
+	<div>
+		<a href="{{ site.baseurl}}/about/">{{ site.author }}</a>&nbsp;&nbsp;&nbsp;/<time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }}</time>
+	</div>
+	<hr>
+	<div>
+		{% if page.categories %}
+		  in categories
+		  {% for cat in page.categories %}
+		  <a href="{{ site.baseurl}}/categories/#{{ cat }}">{{ cat }}</a>&nbsp;
+		  {% endfor %}
+		{% endif %}
+		{% if page.tags %}
+		  tagged with
+		  {% for tag in page.tags %}
+		  <a href="{{ site.baseurl}}/tags/#{{ tag }}">{{ tag }}</a>&nbsp;
+		  {% endfor %}
+		{% endif %}
+	</div>
+    <div id="return" title="返回顶部">
+	    <img src="{{ site.baseurl}}/images/ddd.png"></img>
+	</div>
+</div>

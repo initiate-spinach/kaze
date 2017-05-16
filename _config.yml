@@ -1,0 +1,14 @@
+markdown: kramdown
+permalink: /:title/
+author: Kario
+name: Kario's blog
+baseurl: "/kaze"
+url: "https://initiate-spinach.github.io/kaze"
+
+kramdown:
+  input: GFM
+safe: false
+paginate: 9
+gems: [jekyll-paginate]
+exclude:
+  - README.md
