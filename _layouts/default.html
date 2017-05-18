@@ -3,13 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="author" content="({ site.author }}">
+	<meta name="author" content="({ site.author}}">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
-	<title>{{ page.title }} | {{ site.author }}</title>
+	<title>{{ page.title}} | {{ site.author}}</title>
+    <meta name="keywords" content="Kario,blog,front-end,developer">
 	<meta name="description" content="Learn something about code to create something about art.">
 
 	<link rel="shortcut icon" href="{{ site.baseurl}}/icon.ico">
-	<link rel="canonical" href="http://localhost:4000/">
+	<link rel="canonical" href="http://localhost:4000">
 	<link rel="stylesheet" href="{{ site.baseurl}}/media/css/style.css">
     <link rel="stylesheet" href="{{ site.baseurl}}/media/css/highlight.css">
     <script type="text/javascript" src="{{ site.baseurl}}/media/js/jquery-3.2.1.min.js"></script>
@@ -17,7 +18,7 @@
 </head>
 <body>
     <header>
-    <h1>{{ page.title }}</h1>
+    <h1>{{ page.title}}</h1>
     </header>
     <div id="container">
     <div class="navt">
@@ -48,7 +49,7 @@
    }
  })
  $("#return").click(function(){
-   $('body').animate({scrollTop:0},700);
+   $('body').animate({scrollTop: 0},700);
  })
 </script>
 </body>

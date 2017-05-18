@@ -5,7 +5,7 @@ layout: default
 
 <div class="tag_c">
 {% for tag in site.tags %}
-<a href="{{ site.baseurl}}/tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}({{ tag[1].size }})</a>
+<a href="{{ site.baseurl}}/tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size}}">{{ tag[0] }}({{ tag[1].size }})</a>
 {% endfor %}
 </div>
 
@@ -15,7 +15,7 @@ layout: default
 	{% for post in tag[1] %}
 	  <li class="lists-item">
 		  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-		  <a href="{{ site.url}}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+		  <a href="{{ site.url}}{{ post.url}}" title="{{ post.title}}">{{ post.title }}</a>
 	  </li>
 	{% endfor %}
 {% endfor %}
@@ -26,7 +26,6 @@ layout: default
 $.fn.tagcloud.defaults = {
     size: {start: 1, end: 1, unit: 'em'}
 };
-
 $(function () {
     $('#tag_cloud a').tagcloud();
 });
