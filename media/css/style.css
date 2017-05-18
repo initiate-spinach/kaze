@@ -215,6 +215,10 @@ footer p, .pvInvalid, .paginator{
 	article img{
 		max-width: 330px
 	}
+	#return img{
+		width: 60px;
+		height: 60px
+}
 }
 @media (min-width: 768px) and (max-width: 1023px){
 	nav{
