@@ -138,7 +138,7 @@ article{
 }
 article  img{
 	display: block;
-  float: right;
+        float: right;
 	max-width: 100px;
 	margin-left: 3px;
 	box-shadow: 2px 2px 6px #999;
