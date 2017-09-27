@@ -138,7 +138,8 @@ article{
 }
 article  img{
 	display: block;
-	max-width: 600px;
+	float: right;
+	max-width: 100px;
 	margin-left: 3px;
 	box-shadow: 2px 2px 6px #999;
 }
@@ -214,7 +215,7 @@ footer p, .pvInvalid, .paginator{
 		width: 80%;
 	}
 	article img{
-		max-width: 330px
+		max-width: 100px
 	}
 	#return img{
 		width: 60px;
@@ -238,6 +239,6 @@ footer p, .pvInvalid, .paginator{
 		width: 60%;
 	}
 	article img{
-		max-width: 445px
+		max-width: 100px
 	}
 }
